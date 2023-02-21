@@ -1,6 +1,6 @@
 <template>
   <a
-    href="http://tholman.com/github-corners/"
+    href="https://github.com/Hajneken/market-evaluator"
     target="_blank"
     class="github-corner"
     aria-label="View source on GitHub"
