@@ -1,0 +1,6 @@
+@startuml
+component "Frontend" as frontend
+component "Score Service" as score
+
+frontend -(0- score : <<REST>>
+@enduml

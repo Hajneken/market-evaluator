@@ -1,0 +1,32 @@
+@startuml
+
+person user 
+
+node browser{
+    node "Frontend App" as frontend{
+    node "VueJS" as vue{
+            artifact "index.html" as index
+
+    artifact "App.vue" as app
+    }
+}   
+}
+
+cloud "Azure"{
+    node "<<container>>\nDocker" as docker {
+        node "<<service>>\nnodejs" as nodejs{
+            artifact "index.js"
+    }
+    database "<<database>>\nMongoDB" as db{
+    }
+    }
+}
+
+user -- browser
+frontend -- nodejs
+nodejs -- db
+
+
+
+
+@enduml
