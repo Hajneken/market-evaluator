@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="233px" preserveAspectRatio="none" style="width:189px;height:233px;background:#FFFFFF;" version="1.1" viewBox="0 0 189 233" width="189px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="145" x="15" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="20" y="22.9951">Component View</text><!--MD5=[b1e3d2dcb3697de9e6328d1cb436cbc4]
+entity frontend--><g id="elem_frontend"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="27.5" y="44.2969"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="142.5" y="49.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="140.5" y="51.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="140.5" y="55.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="42.5" y="77.292">Frontend:Vue</text></g><!--MD5=[c8764232826ea003b14b9e4b15d28b61]
+entity score--><g id="elem_score"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="176" x="7" y="181.2969"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="163" y="186.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="161" y="188.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="161" y="192.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="22" y="214.292">Score Service:Node</text></g><!--MD5=[f3fd4d4f51cbc61f548f69427e32c7df]
+link frontend to score--><g id="link_frontend_score"><path d="M95,90.5869 C95,115.6069 95,155.9469 95,180.9669 " fill="none" id="frontend-score" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="103" y="140.3638">«REST»</text><path d="M102.0711,128.7058 A10,10 0 0 0 87.9289 128.7058" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="95" cy="135.7769" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[dd2eec2ac3c36d669f8e7b30a0a2bbd5]
+@startuml
+component "Frontend:Vue" as frontend
+component "Score Service:Node" as score
+
+title Component View
+
+frontend -(0- score : <<REST>>
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
