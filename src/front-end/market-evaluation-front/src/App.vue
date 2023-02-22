@@ -1,6 +1,6 @@
 <template>
-  <github-corner></github-corner>
   <main>
+    <github-corner></github-corner>
     <v-container style="max-width: 920px">
       <v-row class="mt-5">
         <v-col md="8" cols="12">
@@ -73,7 +73,9 @@
               <div class="text-caption">
                 {{ el.name }}
                 <strong>{{
-                  el.input !== undefined ? `: ${el.input.toFixed(2)}` : ""
+                  el.input !== undefined
+                    ? `: ${Number(el.input).toFixed(2)}`
+                    : ""
                 }}</strong>
               </div>
               <v-slider
@@ -146,7 +148,7 @@
 <script lang="ts">
 import GithubCorner from "./components/GithubCorner.vue";
 import Settings from "./components/Settings.vue";
-import { criteriaValues } from "./criteria.ts";
+import { criteriaValues } from "./data";
 
 export default {
   components: { GithubCorner, Settings },
